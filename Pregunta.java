@@ -35,7 +35,7 @@ public class Pregunta
      * Metodo verifica la respuesta del usuario
      * @return boolean expresion si o no.
      */
-    public void checarRespuesta()
+    public void checarRespuesta(String respuesta)
     {
         
     }

@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * Clase Cuestionario
  * @autor Joe Diaz
@@ -8,8 +9,16 @@ public class Cuestionario
     /**
      * Metodo para aplicar preguntas
      */
-    public Pregunta aplicarPregunta(Pregunta unaPregunta)
+    public void aplicarPregunta(Pregunta q)
     {
-        return unaPregunta;
+        q.Imprimete();
+        System.out.print("Respuesta: ");
+        Scanner entrada = new Scanner(System.in);
+        String respuesta = entrada.nextLine();
+        /*if(q.checarRespuesta(respuesta)){
+            System.out.println("Respuesta correcta");
+        }else{
+            System.out.println("Respuesta incorrecta");
+        }*/
     }
 }
